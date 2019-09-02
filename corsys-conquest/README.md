@@ -1,4 +1,4 @@
-# Conquest DICOM PACS Server (Corsys-mod)
+# Conquest DICOM PACS Server (Modified for Corsys)
 This is a modification of the Conquest DICOM PACS Server to run on NodeJS with CGI.
 
 ## Running the Conquest DGATE TCP Server
