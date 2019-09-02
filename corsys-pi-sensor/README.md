@@ -6,7 +6,7 @@ Simulates an MIT ECG file to loop. This project assumes you have maven installed
 ```
 $ mvn clean compile assembly:single
 ```
-This will create executable fat JAR in the target directory of the project.
+This will create executable fat JAR in the 'target' directory of the project.
 
 
 ## Run the JAR
