@@ -6,7 +6,7 @@ The Conquest host is hardcoded into the class DicomGateway.java
 ```
 $ mvn clean compile assembly:single
 ```
-This will create executable fat JAR in the target directory of the project.
+This will create executable fat JAR in the 'target' directory of the project.
 
 ## Run the JAR
 ```
