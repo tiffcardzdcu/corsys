@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file-format>
+    <meta-header xfer="1.2.840.10008.1.2.1" name="Little Endian Explicit">
+        <element tag="0002,0000" vr="UL" vm="1" len="4" name="FileMetaInformationGroupLength">170</element>
+        <element tag="0002,0001" vr="OB" vm="1" len="2" name="FileMetaInformationVersion" binary="hidden" />
+        <element tag="0002,0002" vr="UI" vm="1" len="30" name="MediaStorageSOPClassUID">1.2.840.10008.5.1.4.1.1.9.1.1</element>
+        <element tag="0002,0003" vr="UI" vm="1" len="42" name="MediaStorageSOPInstanceUID">1.2.826.0.1.34471.2.44.6.20021122091000..1</element>
+        <element tag="0002,0010" vr="UI" vm="1" len="20" name="TransferSyntaxUID">1.2.840.10008.1.2.1</element>
+        <element tag="0002,0012" vr="UI" vm="1" len="10" name="ImplementationClassUID">2.24.985.4</element>
+        <element tag="0002,0013" vr="SH" vm="1" len="14" name="ImplementationVersionName">ECGConversion2</element>
+    </meta-header>
+    <data-set xfer="1.2.840.10008.1.2.1" name="Little Endian Explicit">
+        <element tag="0008,0012" vr="DA" vm="1" len="8" name="InstanceCreationDate">20080912</element>
+        <element tag="0008,0013" vr="TM" vm="1" len="10" name="InstanceCreationTime">145602.843</element>
+        <element tag="0008,0016" vr="UI" vm="1" len="30" name="SOPClassUID">1.2.840.10008.5.1.4.1.1.9.1.1</element>
+        <element tag="0008,0018" vr="UI" vm="1" len="42" name="SOPInstanceUID">1.2.826.0.1.34471.2.44.6.20021122091000..1</element>
+        <element tag="0008,0020" vr="DA" vm="1" len="8" name="StudyDate">20190627</element>
+        <element tag="0008,0023" vr="DA" vm="1" len="8" name="ContentDate">20021122</element>
+        <element tag="0008,002a" vr="DT" vm="1" len="14" name="AcquisitionDateTime">20021122091000</element>
+        <element tag="0008,0030" vr="TM" vm="1" len="6" name="StudyTime">091000</element>
+        <element tag="0008,0033" vr="TM" vm="1" len="6" name="ContentTime">091000</element>
+        <element tag="0008,0050" vr="SH" vm="0" len="0" name="AccessionNumber" />
+        <element tag="0008,0060" vr="CS" vm="1" len="4" name="Modality">ECG</element>
+        <element tag="0008,0070" vr="LO" vm="1" len="8" name="Manufacturer">Unknown</element>
+        <element tag="0008,0090" vr="PN" vm="0" len="0" name="ReferringPhysicianName" />
+        <element tag="0008,1060" vr="PN" vm="0" len="0" name="NameOfPhysiciansReadingStudy" />
+        <element tag="0008,1070" vr="PN" vm="0" len="0" name="OperatorsName" />
+        <element tag="0008,1090" vr="LO" vm="1" len="6" name="ManufacturerModelName">ELI250</element>
+        <element tag="0010,0010" vr="PN" vm="1" len="16" name="PatientName">TIFFANY CARDOZO</element>
+        <element tag="0010,0020" vr="LO" vm="1" len="8" name="PatientID">61308429</element>
+        <element tag="0010,0030" vr="DA" vm="1" len="8" name="PatientBirthDate">19530508</element>
+        <element tag="0010,0040" vr="CS" vm="1" len="2" name="PatientSex">M</element>
+        <element tag="0010,1000" vr="LO" vm="0" len="0" name="RETIRED_OtherPatientIDs" />
+        <element tag="0010,1010" vr="AS" vm="0" len="0" name="PatientAge" />
+        <element tag="0010,1020" vr="DS" vm="0" len="0" name="PatientSize" />
+        <element tag="0010,1030" vr="DS" vm="0" len="0" name="PatientWeight" />
+        <element tag="0018,1000" vr="LO" vm="0" len="0" name="DeviceSerialNumber" />
+        <element tag="0018,1020" vr="LO" vm="0" len="0" name="SoftwareVersions" />
+        <element tag="0020,000d" vr="UI" vm="1" len="36" name="StudyInstanceUID">1cc7e0a5-60df-43a0-8eb2-ee1f45512740</element>
+        <element tag="0020,000e" vr="UI" vm="1" len="36" name="SeriesInstanceUID">3c0bb589-ddfd-4a01-9e0e-64ac3791410a</element>
+        <element tag="0020,0010" vr="SH" vm="0" len="0" name="StudyID" />
+        <element tag="0020,0011" vr="IS" vm="1" len="2" name="SeriesNumber">1</element>
+        <element tag="0020,0013" vr="IS" vm="1" len="2" name="InstanceNumber">1</element>
+        <element tag="0020,0060" vr="CS" vm="0" len="0" name="Laterality" />
+        <element tag="0038,0300" vr="LO" vm="0" len="0" name="CurrentPatientLocation" />
+        <element tag="0038,0400" vr="LO" vm="0" len="0" name="PatientInstitutionResidence" />
+        <element tag="0038,4000" vr="LT" vm="0" len="0" name="VisitComments" />
+        <sequence tag="0040,0555" vr="SQ" card="1" name="AcquisitionContextSequence">
+            <item card="3">
+                <element tag="0040,a040" vr="CS" vm="1" len="4" name="ValueType">CODE</element>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.4.5-33-1</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="20" name="CodeMeaning">Electrode Placement</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a168" vr="SQ" card="1" name="ConceptCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="12" name="CodeValue">5.4.5-33-1-0</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">Unspecified</element>
+                    </item>
+                </sequence>
+            </item>
+        </sequence>
+        <element tag="0040,1002" vr="LO" vm="0" len="0" name="ReasonForTheRequestedProcedure" />
+        <sequence tag="0040,b020" vr="SQ" card="12" name="WaveformAnnotationSequence">
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.13.5-7</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">PR Interval</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="4" name="NumericValue">148</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.13.5-9</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">QRS Duration</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="4" name="NumericValue">120</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.13.5-11</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">QT Interval</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="4" name="NumericValue">420</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.10.2.5-5</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">QTc Interval</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="4" name="NumericValue">443</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.10.3-11</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="6" name="CodeMeaning">P Axis</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="2" name="NumericValue">44</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.10.3-13</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">QRS Axis</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="4" name="NumericValue">-61</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,08ea" vr="SQ" card="1" name="MeasurementUnitsCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">ms</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="12" name="CodeMeaning">milliseconds</element>
+                    </item>
+                </sequence>
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.10.3-15</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">QRS Axis</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">0</element>
+                <element tag="0040,a30a" vr="DS" vm="1" len="2" name="NumericValue">86</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.10.3-1</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">P onset</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a130" vr="CS" vm="1" len="6" name="TemporalRangeType">POINT</element>
+                <element tag="0040,a132" vr="UL" vm="1" len="4" name="ReferencedSamplePositions">143</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">1</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.10.3-2</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">P offset</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a130" vr="CS" vm="1" len="6" name="TemporalRangeType">POINT</element>
+                <element tag="0040,a132" vr="UL" vm="1" len="4" name="ReferencedSamplePositions">194</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">1</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.10.3-3</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">QRS onset</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a130" vr="CS" vm="1" len="6" name="TemporalRangeType">POINT</element>
+                <element tag="0040,a132" vr="UL" vm="1" len="4" name="ReferencedSamplePositions">217</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">1</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.10.3-4</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">QRS offset</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a130" vr="CS" vm="1" len="6" name="TemporalRangeType">POINT</element>
+                <element tag="0040,a132" vr="UL" vm="1" len="4" name="ReferencedSamplePositions">277</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">1</element>
+            </item>
+            <item card="5">
+                <sequence tag="0040,a043" vr="SQ" card="1" name="ConceptNameCodeSequence">
+                    <item card="4">
+                        <element tag="0008,0100" vr="SH" vm="1" len="8" name="CodeValue">5.10.3-5</element>
+                        <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                        <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                        <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">T offset</element>
+                    </item>
+                </sequence>
+                <element tag="0040,a0b0" vr="US" vm="2" len="4" name="ReferencedWaveformChannels">1\0</element>
+                <element tag="0040,a130" vr="CS" vm="1" len="6" name="TemporalRangeType">POINT</element>
+                <element tag="0040,a132" vr="UL" vm="1" len="4" name="ReferencedSamplePositions">427</element>
+                <element tag="0040,a180" vr="US" vm="1" len="2" name="AnnotationGroupNumber">1</element>
+            </item>
+        </sequence>
+        <sequence tag="5400,0100" vr="SQ" card="2" name="WaveformSequence">
+            <item card="12">
+                <element tag="0018,1068" vr="DS" vm="1" len="2" name="MultiplexGroupTimeOffset">0</element>
+                <element tag="0018,1069" vr="DS" vm="1" len="2" name="TriggerTimeOffset">0</element>
+                <element tag="003a,0004" vr="CS" vm="1" len="8" name="WaveformOriginality">ORIGINAL</element>
+                <element tag="003a,0005" vr="US" vm="1" len="2" name="NumberOfWaveformChannels">12</element>
+                <element tag="003a,0010" vr="UL" vm="1" len="4" name="NumberOfWaveformSamples">4999</element>
+                <element tag="003a,001a" vr="DS" vm="1" len="4" name="SamplingFrequency">500</element>
+                <element tag="003a,0020" vr="SH" vm="1" len="6" name="MultiplexGroupLabel">RHYTHM</element>
+                <sequence tag="003a,0200" vr="SQ" card="12" name="ChannelDefinitionSequence">
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-1</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="6" name="CodeMeaning">Lead I</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-2</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead II</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-61</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead III</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-62</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead aVR</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-63</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead aVL</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-64</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead aVF</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-3</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V1</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-4</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V2</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-5</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V3</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-6</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V4</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-7</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V5</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-8</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V6</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                </sequence>
+                <element tag="5400,1004" vr="US" vm="1" len="2" name="WaveformBitsAllocated">16</element>
+                <element tag="5400,1006" vr="CS" vm="1" len="2" name="WaveformSampleInterpretation">SS</element>
+                <element tag="5400,100a" vr="OW" vm="1" len="2" name="WaveformPaddingValue" binary="hidden" />
+                <element tag="5400,1010" vr="OB" vm="1" len="119976" name="WaveformData" loaded="no" binary="hidden" />
+            </item>
+            <item card="12">
+                <element tag="0018,1068" vr="DS" vm="1" len="2" name="MultiplexGroupTimeOffset">0</element>
+                <element tag="0018,1069" vr="DS" vm="1" len="2" name="TriggerTimeOffset">0</element>
+                <element tag="0018,106e" vr="UL" vm="1" len="4" name="TriggerSamplePosition">0</element>
+                <element tag="003a,0004" vr="CS" vm="1" len="8" name="WaveformOriginality">DERIVED</element>
+                <element tag="003a,0005" vr="US" vm="1" len="2" name="NumberOfWaveformChannels">12</element>
+                <element tag="003a,0010" vr="UL" vm="1" len="4" name="NumberOfWaveformSamples">599</element>
+                <element tag="003a,001a" vr="DS" vm="1" len="4" name="SamplingFrequency">500</element>
+                <element tag="003a,0020" vr="SH" vm="1" len="12" name="MultiplexGroupLabel">MEDIAN BEAT</element>
+                <sequence tag="003a,0200" vr="SQ" card="12" name="ChannelDefinitionSequence">
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-1</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="6" name="CodeMeaning">Lead I</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-2</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead II</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-61</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead III</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-62</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead aVR</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-63</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead aVL</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-64</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead aVF</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-3</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V1</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-4</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V2</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-5</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V3</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-6</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V4</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-7</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V5</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                    <item card="7">
+                        <sequence tag="003a,0208" vr="SQ" card="1" name="ChannelSourceSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="10" name="CodeValue">5.6.3-9-8</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="6" name="CodingSchemeDesignator">SCPECG</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.3</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="8" name="CodeMeaning">Lead V6</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0210" vr="DS" vm="1" len="4" name="ChannelSensitivity">2.5</element>
+                        <sequence tag="003a,0211" vr="SQ" card="1" name="ChannelSensitivityUnitsSequence">
+                            <item card="4">
+                                <element tag="0008,0100" vr="SH" vm="1" len="2" name="CodeValue">uV</element>
+                                <element tag="0008,0102" vr="SH" vm="1" len="4" name="CodingSchemeDesignator">UCUM</element>
+                                <element tag="0008,0103" vr="SH" vm="1" len="4" name="CodingSchemeVersion">1.4</element>
+                                <element tag="0008,0104" vr="LO" vm="1" len="10" name="CodeMeaning">microvolt</element>
+                            </item>
+                        </sequence>
+                        <element tag="003a,0212" vr="DS" vm="1" len="2" name="ChannelSensitivityCorrectionFactor">1</element>
+                        <element tag="003a,0213" vr="DS" vm="1" len="2" name="ChannelBaseline">0</element>
+                        <element tag="003a,0215" vr="DS" vm="1" len="2" name="ChannelSampleSkew">0</element>
+                        <element tag="003a,021a" vr="US" vm="1" len="2" name="WaveformBitsStored">16</element>
+                    </item>
+                </sequence>
+                <element tag="5400,1004" vr="US" vm="1" len="2" name="WaveformBitsAllocated">16</element>
+                <element tag="5400,1006" vr="CS" vm="1" len="2" name="WaveformSampleInterpretation">SS</element>
+                <element tag="5400,1010" vr="OW" vm="1" len="14376" name="WaveformData" loaded="no" binary="hidden" />
+            </item>
+        </sequence>
+    </data-set>
+</file-format>

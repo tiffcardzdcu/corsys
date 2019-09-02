@@ -1,0 +1,17 @@
+{
+  "name": "node-cgi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dgate-webserver.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cgi": "^0.3.1",
+    "http": "0.0.0",
+    "path": "^0.12.7"
+  }
+}
