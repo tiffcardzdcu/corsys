@@ -10,7 +10,7 @@ $ chmod +x maklinux
 $ ./maklinux
 ```
 This will compile dgate and place all essential files into path set by $CGI_BIN_PATH.
-All contents of this file were then placed into the root folder of this project.
+All contents of this file were then placed into the root folder of this project. A NodeJS/CGI project was then initialized in this root path and the path for the dgate executable was used as a CGI service.
 
 ## Running the Conquest DGATE TCP Server
 To run dgate, run the shell script
@@ -19,7 +19,7 @@ $ ./RUN_DGATE_MAIN.sh
 ```
 
 ## Running the CGI Server
-Make sure you have NodeJS installed on your machine. The same folder has a NodeJS project with package.json in the same folder. After cloning the project, **in another terminal** run 
+Make sure you have NodeJS installed on your machine. The project's root folder has a NodeJS project with package.json. After cloning the project, **in another terminal** run 
 ```
 $ npm install
 ```
