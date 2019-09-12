@@ -13,7 +13,7 @@ SRC=./src/dgate;
 CONF=./linux/conf;
 LINUX=./linux;
 #OLD# CGI_BIN_PATH=/usr/lib/cgi-bin
-CGI_BIN_PATH=../node-cgi
+CGI_BIN_PATH=/tmp/dgate-out
 
 sudo mkdir /usr/local/man.man1
 chmod 777 src/dgate/jpeg-6c/configure
