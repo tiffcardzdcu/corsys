@@ -28,7 +28,7 @@ The Conquest CGI Mode can now be run on Node JS by simple running ...
 $ ./RUN_CGI_DGATE_NODEJS.sh
 ```
 This runs dgate in CGI Mode for the Conquest Web Service. The default port is 4000.
-Open the service in your favorite browser at http://<SERVER-HOST-OR-IP>:4000/
+Open the service in your favorite browser at http://SERVER-HOST-OR-IP:4000/
 
 ## Resetting the Conquest database
 Modify the ```rm``` line in the file RESET_DATABASE.sh to include Patient IDs that have been used.
