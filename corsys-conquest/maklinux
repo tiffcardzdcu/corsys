@@ -15,6 +15,9 @@ LINUX=./linux;
 #OLD# CGI_BIN_PATH=/usr/lib/cgi-bin
 CGI_BIN_PATH=/tmp/dgate-out
 
+sudo mkdir -p $CGI_BIN_PATH 
+sudo chmod 777 $CGI_BIN_PATH 
+
 sudo mkdir /usr/local/man.man1
 chmod 777 src/dgate/jpeg-6c/configure
 cd src/dgate/jpeg-6c
@@ -55,8 +58,7 @@ sudo cp ./dgate $CGI_BIN_PATH/dgate ;
 sudo cp ./dicom.sql $CGI_BIN_PATH/dicom.sql ;
 sudo cp ./acrnema.map $CGI_BIN_PATH/acrnema.map ;
 
-sudo mkdir -p $CGI_BIN_PATH ;
-sudo chmod 777 $CGI_BIN_PATH ;
+
 
 sudo cp -r ./webserver/cgi-bin/* $CGI_BIN_PATH;
 sudo cp -r ./webserver/cgi-bin/.lua $CGI_BIN_PATH;
@@ -78,4 +80,4 @@ mkdir data/dbase
 
 ./dgate -v -r
 
-echo "Now run ./RUN_DGATE.sh to start server";
+echo "Now copy contents of $CGI_BIN_PATH to desirable path and run ./RUN_DGATE.sh to start server";

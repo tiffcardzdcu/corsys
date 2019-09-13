@@ -4,6 +4,7 @@ var path = require('path');
 
 const PORT = 4000;
 
+//var dgate_exe_path = path.resolve(__dirname, 'dgate');
 var dgate_exe_path = path.resolve(__dirname, 'dgate');
 
 http.createServer( cgi(dgate_exe_path) ).listen(PORT);
